@@ -1,0 +1,6 @@
+{
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+    "editor.fontLigatures": true,
+    "eslint.autoFixOnSave": true,
+    "npm.enableScriptExplorer": true,
+}
