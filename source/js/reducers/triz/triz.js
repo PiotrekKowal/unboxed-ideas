@@ -1,5 +1,4 @@
 import { Map } from 'immutable';
-import contradictions from 'constants/triz/contradictions';
 import Solution from 'reducers/triz/Solution';
 
 import {
@@ -18,7 +17,6 @@ const initialState = Map({
   featuresToStay: [4, 6],
   solution: [],
   solutionBest: [],
-  contradictions, // TODO delete this field, should be used from constant
 });
 
 const actionsMap = {
