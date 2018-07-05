@@ -46,3 +46,10 @@ rules:
   react/jsx-filename-extension: 0
   react/prefer-stateless-function: 0
   react/require-default-props: 0
+  jsx-a11y/label-has-for: [ 2, {
+                              "components": [ "Label" ],
+                              "required": {
+                                  "some": [ "nesting", "id" ]
+                              },
+                              "allowChildren": false,
+                          }]
