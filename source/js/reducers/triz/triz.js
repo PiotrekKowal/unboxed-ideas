@@ -13,10 +13,9 @@ import {
 } from './triz.utils';
 
 const initialState = Map({
-  featuresToImprove: [1, 2],
-  featuresToStay: [4, 6],
-  solution: [],
-  solutionBest: [],
+  featuresToImprove: [],
+  featuresToStay: [],
+  solutions: [],
 });
 
 const actionsMap = {
@@ -55,20 +54,20 @@ const actionsMap = {
   [SET_SOLUTION]: (state) => {
     const featuresToImprove = state.get('featuresToImprove');
     const featuresToStay = state.get('featuresToStay');
-    const solution = [];
+    const solutions = [];
     featuresToImprove.forEach(flaw => {
       featuresToStay.forEach(keep => {
         if (flaw !== keep) {
           const newSet = new Solution(flaw, keep);
           if (newSet.propositions.length) {
-            solution.push(newSet);
+            solutions.push(newSet);
           }
         }
       });
     });
 
     return state.merge(Map({
-      solution,
+      solutions,
     }));
   },
 };
