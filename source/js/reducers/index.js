@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 import app from 'reducers/app';
-import people from 'reducers/people';
+import contradictions from 'reducers/contradictions';
+import examples from 'reducers/examples';
 import triz from 'reducers/triz/triz';
 
 export default combineReducers({
   app,
-  people,
+  contradictions,
+  examples,
   triz,
 });
