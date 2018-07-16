@@ -3,7 +3,7 @@ https://piotrekkowal.github.io/unboxed-ideas/
 
 ## What is this?
 
-Application which uses TRIZ methodology to solve any sorts of problems. Those methods were created to help engineers in their work, but they can be used in every area. 
+Application uses TRIZ methodology to solve any sort of problems. Mentioned  methods were created to help engineers in their work, but they can be used in other areas as well.
 
 ## Features used
 
