@@ -1,6 +1,7 @@
 {
   "name": "triz",
   "version": "1.0.0",
+  "homepage": "https://piotrekkowal.github.io/unboxed-ideas",
   "private": false,
   "license": "MIT",
   "main": "build/server.js",
@@ -23,6 +24,8 @@
     "lint": "npm run lint-hook --silent || true",
     "hook-add": "prepush install",
     "hook-remove": "prepush remove",
+    "predeploy": "npm run client:build",
+    "deploy": "gh-pages -d build",
     "test": "jest"
   },
   "devDependencies": {
@@ -49,6 +52,7 @@
     "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
+    "gh-pages": "^1.2.0",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.3.0",
     "node-sass": "^4.8.3",
