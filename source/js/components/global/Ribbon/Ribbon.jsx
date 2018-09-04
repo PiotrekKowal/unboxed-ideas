@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Ribon = props => {
+const Ribbon = props => {
   const {
     children, className, ...otherProps
   } = props;
 
-  const classes = classNames('app-ribon', className);
+  const classes = classNames('app-ribbon', className);
 
-  return <div className={ classes } { ...otherProps } >{children}</div>;
+  return <aside className={ classes } { ...otherProps } >{children}</aside>;
 };
 
-Ribon.propTypes = {
+Ribbon.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
 };
 
-export default Ribon;
+export default Ribbon;

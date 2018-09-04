@@ -11,7 +11,7 @@ import NotFound from 'views/NotFound';
 import Content from 'components/global/Layout/Content';
 import Layout from 'components/global/Layout/Layout';
 import Menu from 'components/containers/Menu';
-import Ribon from 'components/global/Ribon';
+import Ribbon from 'components/global/Ribbon/Ribbon';
 import Grid from 'components/global/Grid/Grid';
 import Cell from 'components/global/Grid/Cell';
 
@@ -22,7 +22,7 @@ class App extends Component {
       <div className='App'>
         <Layout className='app-layout__header--fixed'>
           <Menu title='Unboxed Ideas' />
-          <Ribon className='mdl-color--green-300' />
+          <Ribbon className='mdl-color--green-300' />
           <Content className='app-main' >
             <Grid className='app-container'>
               <Cell col={ 2 } hidePhone hideTablet />
