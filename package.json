@@ -45,6 +45,8 @@
     "concurrently": "^3.5.1",
     "cross-env": "^5.1.3",
     "css-loader": "^0.28.7",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.3.1",
     "eslint": "^4.14.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
@@ -94,5 +96,8 @@
   },
   "prepush": [
     "npm run lint-hook --silent"
-  ]
+  ],
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
+  }
 }

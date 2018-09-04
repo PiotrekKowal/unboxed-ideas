@@ -26,6 +26,13 @@
     },
     "production": {
       "presets": ["react-optimize"]
+    },
+    "test": {
+      "presets": [
+        ["env"],
+        "stage-2",
+        "react"
+      ]
     }
   }
 }
